@@ -56,7 +56,7 @@ public class Tavolo {
 
     // togliPortata: 
     public void togliPortata(Portata portata){
-        this.comanda.remove(portata);s
+        this.comanda.remove(portata);
     }
 
     // getTotale: calcola il costo totale di un tavolo 
