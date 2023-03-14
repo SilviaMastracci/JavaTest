@@ -1,11 +1,19 @@
 package libreriaPrimoEsercizio;
 
-public class Libro {
+public class libro {
     // Ho reso privati gli attributi perchè sennò sono visibili da tutti i file 
     private String nome, scrittore, genere, editore;
+
     // Definisco i metodi
     // Costruttore
-    public Libro(){
+    public libro(){
+    }
+
+    public libro(String nome, String scrittore, String genere, String editore){
+        this.nome = nome;
+        this.scrittore = scrittore;
+        this.genere = genere;
+        this.editore = editore;
     }
 
     // Metodi get

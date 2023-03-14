@@ -11,13 +11,13 @@ public class Main {
          * creo un oggetto libro: 
          * Libro libro1 = valore
          */
-        Libro libro1 = new Libro();
-        libro1.setNome("La bella e la bestia");
-        libro1.setEditore("Mondadori");
-        libro1.setScrittore("Giovanni");
-        libro1.setGenere("Fantasy");
+        libro libro1 = new libro("la bella e la bestia", "giovanni", "mondadori", "per bimbi");
+        // libro1.setNome("La bella e la bestia");
+        // libro1.setEditore("Mondadori");
+        // libro1.setScrittore("Giovanni");
+        // libro1.setGenere("Fantasy");
 
-        Libro libro2 = new Libro();
+        libro libro2 = new libro();
         libro2.setNome("Il piccolo principe");
         libro2.setEditore("Mondadori");
         libro2.setScrittore("Pernacchia");
@@ -34,7 +34,7 @@ public class Main {
         scaffale1.aggiungiLibro(libro1);
         scaffale1.aggiungiLibro(libro2);
     
-        Piano piano1 = new Piano();
+        piano piano1 = new piano();
         piano1.setNumero(1);
         piano1.getScaffali().add(scaffale1);
 

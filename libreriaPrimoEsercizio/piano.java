@@ -2,13 +2,13 @@ package libreriaPrimoEsercizio;
 
 import java.util.ArrayList;
 
-public class Piano {
+public class piano {
     // Ho reso privati gli attributi così non sono accessibili da tutti i file
     private int numero; 
     private ArrayList<Scaffale> scaffali = new ArrayList<>();
     // Defenisco i metodi
     // Costruttore
-    public Piano(){
+    public piano(){
     }
 
     // Metodi get

@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Scaffale {
     // Rendo privati gli attributi così non sono accessibili da tutti i file
     private int id; 
-    private ArrayList<Libro> libri = new ArrayList<>();
+    private ArrayList<libro> libri = new ArrayList<>();
     // Definisco i metodi 
     // Costruttore
     public Scaffale(){
@@ -16,7 +16,7 @@ public class Scaffale {
         return this.id;
     }
 
-    public ArrayList<Libro> getLibri(){
+    public ArrayList<libro> getLibri(){
         return this.libri;
     }
 
@@ -25,7 +25,7 @@ public class Scaffale {
         this.id=id;
     }
 
-    public void setLibri(ArrayList<Libro> libri){
+    public void setLibri(ArrayList<libro> libri){
         this.libri=libri;
     }
 
@@ -35,7 +35,7 @@ public class Scaffale {
     }
 
     // Metodo aggiungiLibro
-    public void aggiungiLibro(Libro libro){
+    public void aggiungiLibro(libro libro){
         libri.add(libro);
     }
 }
