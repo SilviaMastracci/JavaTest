@@ -1,4 +1,4 @@
-package EsercizioSecondo;
+package EsercizioSecondoRistorante;
 
 public class MainRistorante {
     

@@ -1,4 +1,4 @@
-package libreriaPrimoEsercizio;
+package EsercizioPrimoLibreria;
 
 import java.util.ArrayList;
 
@@ -7,7 +7,7 @@ public class Main {
         //CREA UN OGGETTO DI LIBRO, METTILO IN UNO SCAFFALE, METTI LO SCAFFALE SU UN PIANO E STAMPA IL PIANO
         /*
          * variabile = valore
-         * String variabile = valore
+EsercizioPrimoLibreria/piano.java         * String variabile = valore
          * creo un oggetto libro: 
          * Libro libro1 = valore
          */
@@ -27,7 +27,7 @@ public class Main {
         // listaDiLibri.add(libro1);
         // listaDiLibri.add(libro2);
 
-        Scaffale scaffale1 = new Scaffale();
+        scaffale scaffale1 = new scaffale();
         scaffale1.setId(3456);
         // scaffale1.setLibri(listaDiLibri);
         // scaffale1.getLibri().add(libro1);

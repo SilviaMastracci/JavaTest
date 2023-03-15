@@ -1,4 +1,4 @@
-package EsercizioSecondo;
+package EsercizioSecondoRistorante;
 
 public class Portata {
     // Definisco gli attributi e li rendo privati così non sono accessibili da tutti i file

@@ -1,4 +1,4 @@
-package libreriaPrimoEsercizio;
+package EsercizioPrimoLibreria;
 
 public class libro {
     // Ho reso privati gli attributi perchè sennò sono visibili da tutti i file 

@@ -1,14 +1,14 @@
-package libreriaPrimoEsercizio;
+package EsercizioPrimoLibreria;
 
 import java.util.ArrayList;
 
-public class Scaffale {
+public class scaffale {
     // Rendo privati gli attributi così non sono accessibili da tutti i file
     private int id; 
     private ArrayList<libro> libri = new ArrayList<>();
     // Definisco i metodi 
     // Costruttore
-    public Scaffale(){
+    public scaffale(){
     }
 
     // Metodi get
