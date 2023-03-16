@@ -4,7 +4,8 @@ import java.util.ArrayList;
 
 public class Attività {
    // definisco gli attributi come privati così non sono accessibili da altri file
-   private String nome, limiteGenere;
+   private String nome;
+   private Genere limiteGenere;
    private int limiteEtà;
    private Staff staff; 
    private ArrayList<Cliente> persone = new ArrayList<>();
@@ -14,7 +15,7 @@ public class Attività {
    public Attività(){
    }
 
-   public Attività(String nome, String limiteGenere, int limiteEtà, Staff staff, ArrayList<Cliente> persone){
+   public Attività(String nome, Genere limiteGenere, int limiteEtà, Staff staff, ArrayList<Cliente> persone){
     this.nome = nome;
     this.limiteGenere = limiteGenere;
     this.limiteEtà = limiteEtà;
@@ -27,7 +28,7 @@ public class Attività {
     return this.nome;
    }
 
-   public String getLimiteGenere(){
+   public Genere getLimiteGenere(){
     return this.limiteGenere;
    }
 
@@ -48,7 +49,7 @@ public class Attività {
     this.nome = nome;
    }
 
-   public void setLimiteGenere(String limiteGenere){
+   public void setLimiteGenere(Genere limiteGenere){
     this.limiteGenere = limiteGenere;
    }
 
@@ -86,7 +87,7 @@ public class Attività {
     // personaAggiungibile: verifica che una persona possiede i requisiti di età richiesti
     private Boolean personaAggiungibile(Cliente cliente){
         // l'uguaglianza tra stringhe si rappresenta con stringa1.equals(stringa2), && vuol dire and, mentre || sta per or
-        if(cliente.getEtà() < limiteEtà && cliente.getGenere().equals(limiteGenere)){
+        if(cliente.getEtà() < limiteEtà && cliente.getGenere() == limiteGenere){
             return true;
         }
         return false;
